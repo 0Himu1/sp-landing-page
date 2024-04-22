@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-hero1 {
+  background: linear-gradient(to top, rgba(6, 0, 26, 0.7), rgba(0, 0, 0, 0)),
+    url("./image/Hero1.jpg");
+}
+
+.bg-hero2 {
+  background: linear-gradient(to top, rgba(6, 0, 26, 0.7), rgba(0, 0, 0, 0)),
+    url("./image/Hero2.jpg");
+}
+
+.bg-hero3 {
+  background: linear-gradient(to top, rgba(6, 0, 26, 0.7), rgba(0, 0, 0, 0)),
+    url("./image/Hero3.jpg");
+}
+
+/* Include the transition within your custom background classes */
+.slide {
+  /* Your existing styles */
+  background-position: center;
+  background-size: cover;
+  /* Transition for the background images */
+  transition: slide 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
