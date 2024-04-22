@@ -8,6 +8,7 @@ import WorkSection from "./page/Work";
 import HeroImage1 from "./image/Hero1.jpg";
 import HeroImage2 from "./image/Hero2.jpg";
 import HeroImage3 from "./image/Hero3.jpg";
+import Lead from "./page/Lead";
 
 const images = [HeroImage1, HeroImage2, HeroImage3];
 
@@ -22,6 +23,7 @@ export default function App() {
       <Image />
       <About />
       <ImageSlider images={images} />
+      <Lead />
     </div>
   );
 }

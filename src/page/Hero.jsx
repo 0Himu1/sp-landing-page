@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { LuArrowLeftCircle, LuArrowRightCircle } from "react-icons/lu";
 // import yourImage from './path-to-your-hero-image.jpg'; // import your hero image
 // Import the background images
 import HeroImage1 from "../image/Hero1.jpg";
@@ -29,6 +28,7 @@ const HeroSection = () => {
       className="h-screen bg-no-repeat bg-cover bg-center transition-transform duration-500 slide"
       style={{
         backgroundImage: `linear-gradient(to top, rgba(6, 0, 26, 0.7), rgba(0, 0, 0, 0)), url(${heroImages[bgImage]})`,
+        animation: "slide 0.5s forwards ease-in-out",
       }}
     >
       <nav className="sticky flex justify-between items-center px-4 py-2 bg-opacity-50 text-white">
